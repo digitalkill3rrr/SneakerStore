@@ -1,5 +1,5 @@
 class Brand < ApplicationRecord
   mount_uploader :logos, LogosUploader
   has_many :sneakers
-  validates :logos, presence: true
+  validates :name, :logos, presence: true
 end
